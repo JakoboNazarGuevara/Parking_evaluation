@@ -50,7 +50,7 @@ case 6 = set hi=5;hi<6
 case 7 = set hi=6;hi<7
 all = set hi=0;hi<7
 */
-for(hi=0;hi<4;){
+for(hi=0;hi<5;){
     let h=hi;
 
 
