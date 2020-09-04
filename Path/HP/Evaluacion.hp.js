@@ -36,7 +36,7 @@ long-term Garage = set i=3;i<4
 long-term surface = set i=4;i<5
 all =
 */
-for(i=0;i<5;){
+for(i=0;i<1;){
     let ci=i
 
 /*this for is meant to loop betwen the diferent cases given
@@ -50,7 +50,7 @@ case 6 = set hi=5;hi<6
 case 7 = set hi=6;hi<7
 all = set hi=0;hi<7
 */
-for(hi=0;hi<7;){
+for(hi=0;hi<4;){
     let h=hi;
 
 
