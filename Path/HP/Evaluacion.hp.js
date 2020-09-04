@@ -74,7 +74,7 @@ describe('Evaluating: '+Tparkeo[ci]+' Case :'+hi+' ',()=>{
         $buttom.click();
     });
 /*call ECheckDate() to veriry nformation in form is correct*/
-    Tools.ECheckDate(((MonthS+1)+'/'+Sdate[h]+'/'+Year),((MonthS+1)+'/'+Sdate[h]+'/'+Year),Stime[h],Ltime[h],SAMPM[h],LAMPM[h],Total[ci][h],Dmsg[h],Hmsg[h],Mmsg[h]);
+    Tools.ECheckDate(((MonthS+1)+'/'+Sdate[h]+'/'+Year),((MonthS+1)+'/'+Ldate[h]+'/'+Year),Stime[h],Ltime[h],SAMPM[h],LAMPM[h],Total[ci][h],Dmsg[h],Hmsg[h],Mmsg[h]);
 
 });
 /*case counter +1*/
