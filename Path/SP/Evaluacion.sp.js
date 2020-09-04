@@ -2,7 +2,7 @@ const Tools = require('./../Tool/datauto');
 
 
 /*just click on calculate to verfy warning and error elements*/
-describe('just click on calculate to verfy warning and error elements',()=>{
+describe('just click on calculate to verify warning and error elements',()=>{
     it('Open Browser',()=>{
         browser.url('http://www.shino.de/parkcalc');
     });
@@ -30,7 +30,7 @@ describe('Entry date after Leaving date should throw error message',()=>{
     Tools.Warnings(null,null,1);
 });
 /*Entry information Without changing Entry date should throw error and warning message*/
-describe('Entry informaton Without changing Entry date should throw error and warning message',()=>{
+describe('Entry information Without changing Entry date should throw error and warning message',()=>{
     it('Open Browser',()=>{
         browser.url('http://www.shino.de/parkcalc');
     });
@@ -42,7 +42,7 @@ describe('Entry informaton Without changing Entry date should throw error and wa
     Tools.Warnings(1,1,1);
 });
 /**/
-describe('Entry informaton With blank Entry date should throw error and warning message',()=>{
+describe('Entry information With blank Entry date should throw error and warning message',()=>{
     it('Open Browser',()=>{
         browser.url('http://www.shino.de/parkcalc');
     });
@@ -59,7 +59,7 @@ it('Set and Check Entry date value to " "', () => {
     Tools.Warnings(1,1,1);
 });
 /*Enter the same Entry and leaving date and same entry and leaving time, total should be "0"*/
-describe('Same date Same time',()=>{
+describe('Enter Same date and Same time',()=>{
     it('Open browser',()=>{
         browser.url('http://www.shino.de/parkcalc');
     });
