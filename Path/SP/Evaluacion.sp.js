@@ -18,7 +18,7 @@ describe('just click on calculate to verfy warning and error elements',()=>{
 });
 
 /*Entry date after Leaving date sould throw error message*/
-describe('Entry date after Leaving date sould throw error message',()=>{
+describe('Entry date after Leaving date should throw error message',()=>{
     it('Open Browser',()=>{
         browser.url('http://www.shino.de/parkcalc');
     });
@@ -30,7 +30,7 @@ describe('Entry date after Leaving date sould throw error message',()=>{
     Tools.Warnings(null,null,1);
 });
 /*Entry information Without changing Entry date should throw error and warning message*/
-describe('Entry informaton Without changing Entry date should throw error and warnng message',()=>{
+describe('Entry informaton Without changing Entry date should throw error and warning message',()=>{
     it('Open Browser',()=>{
         browser.url('http://www.shino.de/parkcalc');
     });
@@ -77,7 +77,6 @@ describe('Same date Same time',()=>{
         expect($diamessage).toHaveTextContaining('(0 Days, 0 Hours, 0 Minutes)');
     });
 });
-
 /*Enter text instead of date*/
 describe('Enter Text instead of date',()=>{
     it('Open browser',()=>{

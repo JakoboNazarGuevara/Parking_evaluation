@@ -12,13 +12,13 @@ Warnings : function Warnings(mktime,gmmktime,ErroMsg){
         });
         };
         if(gmmktime!=null){
-        it('expect warning "gmmktime" to be displayed',()=>{
+        it('Expect warning "gmmktime" to be displayed',()=>{
             const $Wmsg = $('body*=gmmktime()');
             expect($Wmsg).toBeDisplayed();
         });
         };
         if(ErroMsg!=null){
-        it('expect total to have ERROR message Displayed',()=>{
+        it('Expect total to have ERROR message Displayed',()=>{
             const $Error = $('td[class=SubHead]');
             expect($Error).toHaveTextContaining('ERROR');
         });
@@ -121,7 +121,7 @@ ESetDate : function ESetDate(Sday,Lday,Month,Stime,Ltime,SAMPM,LAMPM){
 Sdate=Entry date MM/DD/YYYY, Ldate= Leaving date MM/DD/YYYY, Stime= Entry time "09:00", Ltime= Leaving time "10:30", 
 SAMPM= Entry "AM"or"PM" time, LAMPM= Leaving "AM"or"PM" time, Total= number+2 decimals"36.00" if none then "0",Ndias=number of days,
 Nhoras= number of hours and Nminutos= number of minutes expected to be in the app.
-in case a field s not needed replace value with: null eje:ECheckDate(Sdate,Ldate,Stime,Ltime,null,null,total,Ndias,null,null)*/
+in case a field is not needed replace value with: null eje:ECheckDate(Sdate,Ldate,Stime,Ltime,null,null,total,Ndias,null,null)*/
 ECheckDate : function ECheckDate(Sdate,Ldate,Stime,Ltime,SAMPM,LAMPM,total,Ndias,Nhoras,Nminutos){
         var Imonth=["January","February","March","April","May","Jun","July","August","September","October","November","December"];
         
